@@ -5,15 +5,52 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title> Bsale-Miniati-Vanilla</title>
 
+    <style>
+        body{
+            margin:0;
+            font-family: sans-serif;
+
+        }
+
+        .app{
+            height: 100%;
+            width: 100%;
+        }
+
+        .header{
+            background: coral;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .categories{
+
+        }
+
+        .card-container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(2rem, 20rem));
+            gap: 3.5rem;
+            justify-content: center;
+        }
+
+    </style>
+
 </head>
 <body>
 
     <div class="app">
 
         <div class="header">
-            <nav>
+            <nav class="navbar">
                 <h1>Bsale-Miniati</h1>
-                <div id="categories"></div>
+                <div id="categories" class="categories"></div>
                 <div class = "search-box">
                     <input type = "text" class = "search-control" placeholder="Search" id = "search-input">
                     <button type = "submit" class = "search-btn btn" id = "search-btn">
@@ -24,8 +61,8 @@
             </nav>
         </div>
         <div id="card-container">
-
         </div>
+
 
     </div>
     <script src="./static/index.js" type="application/javascript">
