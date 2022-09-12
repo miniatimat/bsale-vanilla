@@ -62,7 +62,6 @@ function showProducts(products) {
 async function getProducts(){
   const response = await fetch(`https://bsale-miniati.herokuapp.com/product/`)
   const products = await response.json()
-  console.log(products)
   showProducts(products);
 }
 
@@ -81,7 +80,6 @@ async function searchProducts(){
 }
 
 async function filterProducts(category){
-  console.log("Category:", category)
   if(category === ""){
     await getProducts()
   }else{
