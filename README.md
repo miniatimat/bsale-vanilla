@@ -1,4 +1,4 @@
-__DEPLOY LINK__: __https://bsale2.vercel.app/__
+__DEPLOY LINK__: __https://bsale-vanilla.vercel.app/__
 
 ## Objective:
 Create an E-commerce that is able to display products based in their category,
